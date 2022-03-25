@@ -10,8 +10,16 @@ public class Produit
     }
 
     private string _type;
+    
+    private bool desireDuSucre;
 
-    public string Type    // the Name property
+    public bool DesireSucre
+    {
+        get => desireDuSucre;
+        set => desireDuSucre = true;
+    }
+
+    public string TypeBoisson    // the Name property
     {
         get => _type;
         set => _type = value;

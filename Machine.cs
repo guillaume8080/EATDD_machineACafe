@@ -23,7 +23,14 @@ public class Machine
         set => presencecafe = value;
     }
 
-    private bool buttonIspressed;
+    private bool desireDuSucre;
+
+    public bool DesireSucre
+    {
+        get => desireDuSucre;
+        set => desireDuSucre = value;
+    }
+    
 
     public Machine()
     {
@@ -39,7 +46,24 @@ public class Machine
         {
             if (presenceMonnaie == true)
             {
-               return _produit = new Produit("café");    
+                if (this.desireDuSucre == false)
+                {
+                    _produit = new Produit("café");
+                    _produit.DesireSucre = false;
+                    return _produit;
+
+                }
+                else if(this.desireDuSucre == true)
+
+                {
+                    _produit = new Produit("café");
+                    _produit.DesireSucre = true;
+                    return _produit;
+                }
+
+                
+                
+                 
             }
                 
         }

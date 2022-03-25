@@ -30,7 +30,7 @@ public class UnitTest1
         //given - arrange
         Machine machine = new Machine();
         machine.PresenceMonnaie = true;
-        machine.PresenceCafe = true;
+        machine.PresenceCafe = false;
         
         //when - act
         Produit monProduit = machine.userPressButton();
@@ -40,6 +40,33 @@ public class UnitTest1
         {
             Assert.Fail();
         }
+
+        if (monProduit.TypeBoisson != "eau")
+        {
+            Assert.Fail();
+        }
         
     }
+    
+    [TestMethod]
+    public void LivrerSucreAvecBoisson()
+    {
+        //given - arrange
+        Machine machine = new Machine();
+        machine.PresenceMonnaie = true;
+        machine.PresenceCafe = true;
+        machine.DesireSucre = true;
+
+        //when - act
+        Produit monProduit = machine.userPressButton();
+        
+        //then - assert
+        // checker 2 cas si il y a du sucre dans le produit ou pas (booleen)
+        if (!monProduit.DesireSucre)
+        {
+            Assert.Fail();
+        }
+
+    }
+   
 }
