@@ -70,15 +70,18 @@ public class UnitTest1
 
     }
     
-    [TestMethod]
-    public void volumeSucreBoisson()
+    [DataTestMethod]
+    [DataRow(1)]
+    [DataRow(2)]
+    [DataRow(3)]
+    public void volumeSucreBoisson(int volumeSucreUtilisateur)
     {
         //given - arrange
         Machine machine = new Machine();
         machine.PresenceMonnaie = true;
         machine.PresenceCafe = true;
         machine.DesireSucre = true;
-        machine.VolumeSucreUser = 3;
+        machine.VolumeSucreUser = volumeSucreUtilisateur;
 
         //when - act
         Produit monProduit = machine.userPressButton();
