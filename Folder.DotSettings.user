@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eae4e185_002D3d8a_002D404d_002Da487_002D43a296451a22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="livrerCafeSimple" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.livrerCafeSimple&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.LivreEau&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
