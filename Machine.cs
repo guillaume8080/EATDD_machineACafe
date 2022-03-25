@@ -30,7 +30,14 @@ public class Machine
         get => desireDuSucre;
         set => desireDuSucre = value;
     }
-    
+
+    private int volumeSucreUser;
+
+    public int VolumeSucreUser
+    {
+        get => volumeSucreUser;
+        set => volumeSucreUser = value;
+    }
 
     public Machine()
     {
@@ -58,6 +65,7 @@ public class Machine
                 {
                     _produit = new Produit("café");
                     _produit.DesireSucre = true;
+                    _produit.VolumeSucre = this.volumeSucreUser;
                     return _produit;
                 }
 

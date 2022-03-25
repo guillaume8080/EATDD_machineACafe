@@ -13,6 +13,15 @@ public class Produit
     
     private bool desireDuSucre;
 
+    private int volumeSucre;
+
+    public int VolumeSucre
+    {
+        get => this.volumeSucre;
+        set => volumeSucre = value;
+
+    }
+
     public bool DesireSucre
     {
         get => desireDuSucre;

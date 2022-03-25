@@ -66,6 +66,30 @@ public class UnitTest1
         {
             Assert.Fail();
         }
+        
+
+    }
+    
+    [TestMethod]
+    public void volumeSucreBoisson()
+    {
+        //given - arrange
+        Machine machine = new Machine();
+        machine.PresenceMonnaie = true;
+        machine.PresenceCafe = true;
+        machine.DesireSucre = true;
+        machine.VolumeSucreUser = 3;
+
+        //when - act
+        Produit monProduit = machine.userPressButton();
+        
+        //then - assert
+        // checker 2 cas si il y a du sucre dans le produit ou pas (booleen)
+        if (monProduit.VolumeSucre != machine.VolumeSucreUser)
+        {
+            Assert.Fail();
+        }
+        
 
     }
    
