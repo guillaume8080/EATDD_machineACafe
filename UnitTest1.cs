@@ -92,5 +92,28 @@ public class UnitTest1
         
 
     }
+    [TestMethod]
+    public void gobeletUtilisateur()
+    {
+        //given - arrange
+        Machine machine = new Machine();
+        machine.PresenceMonnaie = true;
+        machine.PresenceCafe = true;
+        //machine.DesireSucre = true;
+        //machine.VolumeSucreUser = 3;
+        machine.PresenceGobelet = true;
+
+        //when - act
+        Produit monProduit = machine.userPressButton();
+        
+        //then - assert
+        // checker 2 cas si il y a du sucre dans le produit ou pas (booleen)
+        if (!monProduit.TypeGobeletUtilisateur)
+        {
+            Assert.Fail();
+        }
+        
+
+    }
    
 }

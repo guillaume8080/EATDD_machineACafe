@@ -1,0 +1,11 @@
+Feature: livrer café sans gobelet
+	Background:
+		Given il y a de la monnaie
+        And il y a de l’eau 
+        And il y a un gobelet
+		Scenario: livrer café sans gobelet
+			When L'utilsateur appuie sur le bouton 
+			Given Il y a un gobelet
+			When la machine le detecte 
+			Then Le café est dans un gobelet de type machine
+			

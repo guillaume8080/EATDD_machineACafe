@@ -1,0 +1,34 @@
+Feature: Livrer un café sucré
+	Background:
+		Given il y a de la monnaie
+        	And il y a du grain
+		Scenario: livrer café
+			When le client appuie sur le bouton
+			Then le café coule
+		Given le café est sans sucre
+		And La machine demande à l'utilisateur si il veut du sucre
+		Scenario: livrer n sucre
+			Given le café n'est pas sucré
+			When l'utilisateur appuie sur <volumeSucre>
+			Then la machine fait tomber <volumeSucre>
+		
+		@1
+		Examples: 
+		| volumeSucre |
+		| 1 |
+		
+		@2
+		Examples: 
+		| volumeSucre |
+		| 2 |
+		
+		@3
+		Examples: 
+		| volumeSucre |
+		| 3 |
+		
+
+		
+	
+		
+	

@@ -1,5 +1,6 @@
 namespace testFirst_gherkin_cshrp;
 
+
 public class Machine
 {
     
@@ -9,6 +10,8 @@ public class Machine
         set => _type = value;
     }*/
     private bool presenceMonnaie;
+
+    private bool presenceGobelet;
 
     public bool PresenceMonnaie
     {
@@ -39,6 +42,12 @@ public class Machine
         set => volumeSucreUser = value;
     }
 
+    public bool PresenceGobelet
+    {
+        get => presenceGobelet;
+        set => presenceGobelet = value;
+    }
+
     public Machine()
     {
         
@@ -57,8 +66,15 @@ public class Machine
                 {
                     _produit = new Produit("café");
                     _produit.DesireSucre = false;
-                    return _produit;
+                    
 
+                    if (presenceGobelet)
+                    {
+                        _produit.TypeGobeletUtilisateur = true;
+                        return _produit;
+
+                    }
+                    
                 }
                 else if(this.desireDuSucre == true)
 
@@ -66,7 +82,12 @@ public class Machine
                     _produit = new Produit("café");
                     _produit.DesireSucre = true;
                     _produit.VolumeSucre = this.volumeSucreUser;
-                    return _produit;
+
+                    if (!presenceGobelet)
+                    {
+                        _produit.TypeGobeletUtilisateur = false;
+                        return _produit;
+                    }
                 }
 
                 

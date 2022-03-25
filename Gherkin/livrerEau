@@ -1,0 +1,11 @@
+Feature: Livrer de l'eau
+	Background:
+		Given Il n’y a plus de café 
+        And il y a de l'argent dans le monnayeur
+		Scenario: livraisonEau
+            When la machine délivre de l'eau
+			Then le gobelet est rempli
+		Given il y a de l'eau dans le gobelet
+		When  Le client appuie sur rendre la monnaie
+		Then La machine rend la différence 
+       	  

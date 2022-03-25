@@ -15,6 +15,8 @@ public class Produit
 
     private int volumeSucre;
 
+    private bool typeGobeletUtilisateur;
+
     public int VolumeSucre
     {
         get => this.volumeSucre;
@@ -32,5 +34,11 @@ public class Produit
     {
         get => _type;
         set => _type = value;
+    }
+
+    public bool TypeGobeletUtilisateur
+    {
+        get => typeGobeletUtilisateur;
+        set => typeGobeletUtilisateur = value;
     }
 }

@@ -1,0 +1,20 @@
+Feature: livrer café ou thé
+	Background: 
+		Given il y a de la monnaie
+        And il y a de l’eau 
+        And il y a un gobelet
+		And il y a du café
+		And il y a du thé
+		Scénario: servir boisson choisi
+			When L'utilisateur appuie sur <boissonChoix>
+			Then La machine sert <boissonChoix>
+			
+		@the
+		| boissonChoix |
+		| the |
+		
+		@cafe
+		| boissonChoix |
+		| cafe |
+		
+		

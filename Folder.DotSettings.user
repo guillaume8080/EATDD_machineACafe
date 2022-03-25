@@ -5,5 +5,6 @@
     &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.LivreEau&lt;/TestId&gt;
     &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.LivrerSucreAvecBoisson&lt;/TestId&gt;
     &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.volumeSucreBoisson&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A1414187-C404-5203-C784-6E4A2B9CF237::net6.0::testFirst_gherkin_cshrp.UnitTest1.gobeletUtilisateur&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
